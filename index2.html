@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Adepu Lakshmi Srinivas | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    :root {
+      --primary-color: #f9532d;
+      --secondary-color: #0077ff;
+      --primary-dark: #1F252E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #f9f9f9, #eef6ff);
+      color: #222;
+    }
+
+    /* Container */
+    .container {
+      padding: 0 8.4rem;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+      z-index: 10;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    li a {
+      text-decoration: none;
+      padding: .4rem 1rem;
+      font-weight: 600;
+      color: #333;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    li a:hover,
+    li a.active {
+      background: var(--secondary-color);
+      color: #fff;
+    }
+
+    /* Main Section */
+    .main {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+    }
+
+    .main h3 {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+    }
+
+    .main h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      color: var(--primary-color);
+    }
+
+    .main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Sections */
+    section {
+      margin: 5rem 0;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skills-list span {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: #fff;
+      padding: .6rem 1.2rem;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    /* Contact */
+    .contact p {
+      margin: .5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .social a {
+      font-size: 1.8rem;
+      color: var(--secondary-color);
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: var(--primary-color);
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-dark);
+      color: #fff;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 0 2rem;
+      }
+
+      .main h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container">
+    <div class="page-header">
+      <div class="logo">Srinivas.</div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Intro -->
+  <section class="container main">
+    <div class="detail">
+      <h3>Hello, It's Me</h3>
+      <h1>Adepu Lakshmi Srinivas</h1>
+      <p>
+        I am a hardworking and passionate individual with a strong interest in coding and application development. I
+        enjoy solving problems through technology and continuously strive to improve my skills while building innovative
+        and impactful applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Currently pursuing B.Tech in Computer Science Engineering (3rd Year) at Lovely Professional University.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>C</span>
+      <span>C++</span>
+      <span>Java</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>PHP</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:srinivas949k@gmail.com">srinivas949k@gmail.com</a></p>
+    <p>Phone: <a href="tel:+916303603854">6303603854</a></p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/sriniva8" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Adepu Lakshmi Srinivas. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
